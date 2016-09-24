@@ -131,7 +131,7 @@ public class MyListView extends ListView {
             case MotionEvent.ACTION_MOVE:
                 endXX = event.getX();
                 endYY = event.getY();
-                //判断上下移动还是作业移动
+                //判断上下移动还是左右移动
                 if (Math.abs(startXX-endXX)>Math.abs(startYY-endYY)) {
                     startXX = endXX;
                     startYY = endYY;
